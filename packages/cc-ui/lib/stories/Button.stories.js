@@ -1,7 +1,7 @@
 import UiButton from '../components/Button.vue'
 
 export default {
-    title: 'Example/Button',
+    title: 'UiButton',
     component: UiButton,
     tags: ['autodocs'],
     argTypes: {
@@ -18,7 +18,6 @@ export default {
     },
 };
 
-// More on writing stories with args: https://storybook.js.org/docs/vue/writing-stories/args
 export const Primary = {
     args: {
         primary: true,

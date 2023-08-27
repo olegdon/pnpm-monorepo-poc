@@ -1,7 +1,11 @@
 <template>
   <div>
-    <UiButton label="Test" primary/>
-    <cc-button label="VIN" text-color="white" background-color="green"/>
+    <UiButton label="Click me" primary />
+    <cc-button
+        label="And me"
+        text-color="white"
+        background-color="green"
+    />
   </div>
 </template>
 
