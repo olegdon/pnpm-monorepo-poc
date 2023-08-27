@@ -1,9 +1,15 @@
 <template>
   <div>
-    <cc-btn>
-      VIN
-    </cc-btn>
+    <UiButton label="Test" primary/>
   </div>
 </template>
-<script setup lang="ts">
+
+<script>
+import UiButton from 'cc-ui/lib/components/Button'
+
+export default defineComponent({
+  components: {
+    UiButton
+  },
+})
 </script>

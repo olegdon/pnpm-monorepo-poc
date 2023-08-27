@@ -1,12 +1,14 @@
 {
-  "name": "spiegel_de",
+  "name": "spiegel",
   "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev --port=3020",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
