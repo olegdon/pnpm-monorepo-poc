@@ -27,6 +27,9 @@ export default {
     backgroundColor: {
       type: String,
     },
+    textColor: {
+      type: String,
+    }
   },
 
   emits: ['click'],
@@ -42,6 +45,7 @@ export default {
       })),
       style: computed(() => ({
         backgroundColor: props.backgroundColor,
+        color: props.textColor,
       })),
       onClick() {
         emit('click');
