@@ -9,7 +9,7 @@ import '../assets/button.css'
 import { reactive, computed } from 'vue'
 
 export default {
-  name: 'my-button',
+  name: 'ui-button',
 
   props: {
     label: {
