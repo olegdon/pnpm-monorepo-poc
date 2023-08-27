@@ -5,6 +5,7 @@
         label="And me"
         text-color="white"
         background-color="green"
+        class="flex justify-center items-center h-12 w-32 rounded-md"
     />
   </div>
 </template>

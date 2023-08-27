@@ -1,7 +1,8 @@
 {
   "name": "mono-web-app-poc",
   "version": "1.0.0",
-  "description": "",
+  "description": "Scalable Nuxt 3 Mono repos with PNPM Workspaces for Voucher Channelizers",
+  "author": "Oleg Don",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +10,6 @@
     "build-storybook": "storybook build"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@storybook/addon-essentials": "^7.3.2",
@@ -20,6 +20,11 @@
     "@storybook/testing-library": "^0.2.0",
     "@storybook/vue3": "^7.3.2",
     "@storybook/vue3-vite": "^7.3.2",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-storybook": "^0.6.13",
+    "eslint-plugin-vitest": "^0.2.6",
     "prettier": "3.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

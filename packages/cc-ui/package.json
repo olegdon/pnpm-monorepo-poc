@@ -1,15 +1,16 @@
 {
   "name": "cc-ui",
   "version": "1.0.0",
-  "description": "",
+  "author": "Oleg Don",
+  "description": "UI package for Nuxt",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
-    "@nuxt/kit": "^3.7.0"
+    "@nuxt/kit": "^3.7.0",
+    "sass": "^1.66.1"
   }
 }
