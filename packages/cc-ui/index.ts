@@ -1,4 +1,4 @@
-import { addPlugin, defineNuxtModule, createResolver } from '@nuxt/kit'
+import { defineNuxtModule } from '@nuxt/kit'
 import { join } from 'path'
 
 export default defineNuxtModule({
@@ -9,10 +9,5 @@ export default defineNuxtModule({
                 prefix: 'cc',
             })
         })
-
-        const { resolve } = createResolver(import.meta.url)
-
-        // Add plugin
-        // addPlugin(resolve('lib/plugins/pluginName.ts'))
     }
 })
