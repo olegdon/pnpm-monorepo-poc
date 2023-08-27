@@ -1,11 +1,11 @@
 <template>
   <div>
-    <UiButton label="Click me" primary />
+    <UiButton label="Click me" primary class="d-block"/>
     <cc-button
         label="And me"
         text-color="white"
         background-color="green"
-        class="flex justify-center items-center h-12 w-32 rounded-md"
+        class="mt-2 d-block"
     />
   </div>
 </template>
@@ -19,3 +19,11 @@ export default defineComponent({
   },
 })
 </script>
+
+<style lang="sass">
+.d-block
+  display: block
+
+.mt-2
+  margin-top: 2rem
+</style>
