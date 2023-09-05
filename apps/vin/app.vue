@@ -9,7 +9,8 @@
     <cc-button
         label="VIN VIN"
         text-color="white"
-        background-color="green"
+        background-color="orange"
+        class="m-2"
     />
   </div>
 </template>

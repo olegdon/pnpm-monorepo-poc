@@ -102,9 +102,15 @@ importers:
 
   apps/vin:
     dependencies:
+      cc-ui:
+        specifier: workspace:^
+        version: link:../../packages/cc-ui
       nuxt:
         specifier: ^3.6.5
         version: 3.7.0(@types/node@18.17.3)(eslint@8.43.0)(typescript@4.9.5)
+      tailwind-config:
+        specifier: workspace:^
+        version: link:../../packages/tailwind-config
     devDependencies:
       '@nuxt/devtools':
         specifier: latest
@@ -112,12 +118,6 @@ importers:
       '@types/node':
         specifier: ^18.17.3
         version: 18.17.3
-      cc-ui:
-        specifier: workspace:^
-        version: link:../../packages/cc-ui
-      tailwind-config:
-        specifier: workspace:^
-        version: link:../../packages/tailwind-config
 
   packages/cc-ui:
     dependencies:
