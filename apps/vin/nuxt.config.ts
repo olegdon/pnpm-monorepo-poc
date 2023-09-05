@@ -4,9 +4,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
     devtools: { enabled: true },
     modules: [
+        '@nuxtjs/tailwindcss',
       'cc-ui'
-    ],
-    css: [
-      '~/assets/main.css',
-    ],
+    ]
 })

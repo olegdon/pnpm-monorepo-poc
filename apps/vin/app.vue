@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-3xl underline text-amber-400">
+    <h1 class="text-3xl underline text-amber-400 m-4">
       Hello VIN!
     </h1>
 
@@ -10,7 +10,6 @@
         label="VIN VIN"
         text-color="white"
         background-color="orange"
-        class="m-2"
     />
   </div>
 </template>
