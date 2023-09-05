@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-3xl underline">
+    <h1 class="text-3xl underline mb-4 text-brand-main">
       Hello SPIEGEL!
     </h1>
 
