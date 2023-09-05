@@ -1,13 +1,14 @@
 <template>
-  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
+  <button type="button" :class="classes" :style="style" class="mx-5" @click="onClick">{{ label }}</button>
 </template>
 
 <script>
 import '../assets/button.css'
-import { reactive, computed } from 'vue'
+
+import { computed, reactive } from 'vue'
 
 export default {
-  name: 'ui-button',
+  name: 'UiButton',
 
   props: {
     label: {
@@ -20,14 +21,17 @@ export default {
     },
     size: {
       type: String,
+      default: 'medium',
       validator: function (value) {
         return ['small', 'medium', 'large'].indexOf(value) !== -1
       },
     },
     backgroundColor: {
+      default: '',
       type: String,
     },
     textColor: {
+      default: '',
       type: String,
     }
   },

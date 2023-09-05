@@ -11,9 +11,10 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@types/node": "^18.17.3",
-    "nuxt": "^3.6.5"
+    "cc-ui": "workspace:^",
+    "tailwind-config": "workspace:^"
   },
   "dependencies": {
-    "cc-ui": "workspace:^"
+    "nuxt": "^3.6.5"
   }
 }

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import UiButton from 'cc-ui/lib/components/Button'
+import UiButton from 'cc-ui/components/Button'
 
 export default defineComponent({
   components: {

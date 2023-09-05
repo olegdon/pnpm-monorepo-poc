@@ -1,29 +1,19 @@
 <template>
   <div>
-    <UiButton label="Click me" primary class="d-block"/>
+    <h1 class="text-3xl underline">
+      Hello world!
+    </h1>
+
+    <UiButton label="VIN" primary class="m-4"/>
+
     <cc-button
-        label="And me"
+        label="VIN VIN"
         text-color="white"
         background-color="green"
-        class="mt-2 d-block"
     />
   </div>
 </template>
 
-<script>
-import UiButton from 'cc-ui/lib/components/Button'
-
-export default defineComponent({
-  components: {
-    UiButton
-  },
-})
+<script setup>
+import UiButton from 'cc-ui/components/Button'
 </script>
-
-<style lang="sass">
-.d-block
-  display: block
-
-.mt-2
-  margin-top: 2rem
-</style>

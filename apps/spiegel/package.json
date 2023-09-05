@@ -14,6 +14,7 @@
     "nuxt": "^3.6.5"
   },
   "dependencies": {
-    "cc-ui": "workspace:^"
+    "cc-ui": "workspace:^",
+    "tailwind-config": "^0.1.2"
   }
 }
