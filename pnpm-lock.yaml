@@ -84,11 +84,8 @@ importers:
   apps/spiegel:
     dependencies:
       cc-ui:
-        specifier: workspace:^
+        specifier: workspace:0.0.1
         version: link:../../packages/cc-ui
-      tailwind-config:
-        specifier: ^0.1.2
-        version: 0.1.2
     devDependencies:
       '@nuxt/devtools':
         specifier: latest
@@ -103,14 +100,11 @@ importers:
   apps/vin:
     dependencies:
       cc-ui:
-        specifier: workspace:^
+        specifier: workspace:0.0.1
         version: link:../../packages/cc-ui
       nuxt:
         specifier: ^3.6.5
         version: 3.7.0(@types/node@18.17.3)(eslint@8.43.0)(typescript@4.9.5)
-      tailwind-config:
-        specifier: workspace:^
-        version: link:../../packages/tailwind-config
     devDependencies:
       '@nuxt/devtools':
         specifier: latest
@@ -127,9 +121,6 @@ importers:
       sass:
         specifier: ^1.66.1
         version: 1.66.1
-
-  packages/tailwind-config:
-    dependencies:
       tailwindcss:
         specifier: ^3.3.2
         version: 3.3.3
@@ -2565,7 +2556,7 @@ packages:
       estree-walker: 3.0.3
       externality: 1.0.2
       fs-extra: 11.1.1
-      get-port-please: 3.0.1
+      get-port-please: 3.0.2
       h3: 1.8.1
       knitwork: 1.0.0
       magic-string: 0.30.3
@@ -7524,12 +7515,8 @@ packages:
     engines: {node: '>=8.0.0'}
     dev: true
 
-  /get-port-please@3.0.1:
-    resolution: {integrity: sha512-R5pcVO8Z1+pVDu8Ml3xaJCEkBiiy1VQN9za0YqH8GIi1nIqD4IzQhzY6dDzMRtdS1lyiGlucRzm8IN8wtLIXng==}
-
   /get-port-please@3.0.2:
     resolution: {integrity: sha512-c14cAITf0E+uqdxGALvyYHwOL7UsnWcv3oDtgDAZksiVSGN87xlWVUWGZcmWQU3cICdaOxT+6LdQzUfK2ei1SA==}
-    dev: true
 
   /get-port@5.1.1:
     resolution: {integrity: sha512-g/Q1aTSDOxFpchXC4i8ZWvxA1lnPqx/JHqcpIw0/LX9T8x/GBbi6YnlN5nhaKIFkT8oFsscUKgDJYxfwfS6QsQ==}
@@ -8636,7 +8623,7 @@ packages:
       clipboardy: 3.0.0
       consola: 3.2.3
       defu: 6.1.2
-      get-port-please: 3.0.1
+      get-port-please: 3.0.2
       h3: 1.8.1
       http-shutdown: 1.2.2
       jiti: 1.19.3
@@ -11517,10 +11504,6 @@ packages:
   /synchronous-promise@2.0.17:
     resolution: {integrity: sha512-AsS729u2RHUfEra9xJrE39peJcc2stq2+poBXX8bcM08Y6g9j/i/PUzwNQqkaJde7Ntg1TO7bSREbR5sdosQ+g==}
     dev: true
-
-  /tailwind-config@0.1.2:
-    resolution: {integrity: sha512-7ASrC14CermwwDh0kWeNGrmjZbL7L1fKLopqtSSpVjnwwZvrdo3iSVPWAlmHGkvdEZ7JtZ8UBq3p9qaT+it8+w==}
-    dev: false
 
   /tailwindcss@3.3.3:
     resolution: {integrity: sha512-A0KgSkef7eE4Mf+nKJ83i75TMyq8HqY3qmFIJSWy8bNt0v1lG7jUcpGpoTFxAwYcWOphcTBLPPJg+bDfhDf52w==}

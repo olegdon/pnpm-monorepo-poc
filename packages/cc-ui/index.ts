@@ -1,4 +1,4 @@
-import { defineNuxtModule } from '@nuxt/kit'
+import { createResolver,defineNuxtModule } from '@nuxt/kit'
 import { join } from 'path'
 
 export default defineNuxtModule({
@@ -10,6 +10,10 @@ export default defineNuxtModule({
             })
         })
 
-        nuxt.options.css.push('/assets/styles.css')
+        const { resolve } = createResolver(import.meta.url)
+
+        nuxt.options.css.push(resolve('assets/main.css'))
+
+        console.log('debug', nuxt.options.css)
     }
 })

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="text-3xl underline">
-      Hello world!
+    <h1 class="text-3xl underline text-amber-400">
+      Hello VIN!
     </h1>
 
     <UiButton label="VIN" primary class="m-4"/>

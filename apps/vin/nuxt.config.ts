@@ -7,6 +7,6 @@ export default defineNuxtConfig({
       'cc-ui'
     ],
     css: [
-      '@/assets/styles.css',
+      '~/assets/main.css',
     ],
 })
