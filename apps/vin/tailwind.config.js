@@ -1,6 +1,6 @@
 module.exports = {
     // Extend or override default configuration
-    ...require("cc-ui/tailwind.config.js"),
+    ...require("cc-ui/tailwind.config.ts"),
 
     /**
      * opt in to remove deprecated stuff

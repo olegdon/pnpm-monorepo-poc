@@ -4,16 +4,22 @@
       Index page VIN!
     </h1>
 
-    <UiButton label="Test" primary class="m-4"/>
+    <UiButton
+        v-for="color in ['dark', 'light', 'system']"
+        :key="color"
+    >
+      {{ color }}
+    </UiButton>
 
     <cc-button
-        label="VIN VIN"
-        text-color="white"
-        background-color="orange"
-    />
+        v-for="color in ['dark', 'light', 'system']"
+        :key="color"
+    >
+      {{ color }}
+    </cc-button>
   </div>
 </template>
 
 <script setup>
-import UiButton from "cc-ui/components/Button.vue"
+import UiButton from "cc-ui/components/ui/Button.vue"
 </script>

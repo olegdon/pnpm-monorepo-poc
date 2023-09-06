@@ -5,6 +5,8 @@
   "description": "UI package for Nuxt",
   "main": "index.ts",
   "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "storybook-build": "storybook build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
