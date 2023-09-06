@@ -1,61 +1,52 @@
 <template>
-  <button type="button" :class="classes" :style="style" class="m-2" @click="onClick">{{ label }}</button>
+  <button :class="classes" :style="style" @click="onClick">{{ label }}</button>
 </template>
 
-<script>
+<script setup>
 import '../assets/button.css'
 
-import { computed, reactive } from 'vue'
+import { computed, defineProps } from 'vue'
 
-export default {
-  name: 'UiButton',
-
-  props: {
-    label: {
-      type: String,
-      required: true,
-    },
-    primary: {
-      type: Boolean,
-      default: false,
-    },
-    size: {
-      type: String,
-      default: 'medium',
-      validator: function (value) {
-        return ['small', 'medium', 'large'].indexOf(value) !== -1
-      },
-    },
-    backgroundColor: {
-      default: '',
-      type: String,
-    },
-    textColor: {
-      default: '',
-      type: String,
-    }
+const props = defineProps({
+  label: {
+    type: String,
+    required: true,
   },
-
-  emits: ['click'],
-
-  setup(props, { emit }) {
-    props = reactive(props)
-    return {
-      classes: computed(() => ({
-        'ui-button': true,
-        'ui-button--primary': props.primary,
-        'ui-button--secondary': !props.primary,
-        [`ui-button--${props.size || 'medium'}`]: true,
-      })),
-      style: computed(() => ({
-        backgroundColor: props.backgroundColor,
-        color: props.textColor,
-      })),
-      onClick() {
-        emit('click')
-      },
-    }
+  primary: {
+    type: Boolean,
+    default: false,
   },
+  size: {
+    type: String,
+    default: 'medium',
+    validator: (value) => ['small', 'medium', 'large'].indexOf(value) !== -1,
+  },
+  backgroundColor: {
+    default: '',
+    type: String,
+  },
+  textColor: {
+    default: '',
+    type: String,
+  },
+})
+
+const emit = defineEmits(['click'])
+
+const classes = computed(() => ({
+  'ui-button': true,
+  'ui-button--primary': props.primary,
+  'ui-button--secondary': !props.primary,
+  [`ui-button--${props.size || 'medium'}`]: true,
+}))
+
+const style = computed(() => ({
+  backgroundColor: props.backgroundColor,
+  color: props.textColor,
+}))
+
+const onClick = () => {
+  emit('click')
 }
 </script>
 

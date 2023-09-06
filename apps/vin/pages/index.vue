@@ -4,7 +4,7 @@
       Index page VIN!
     </h1>
 
-    <UiButton label="VIN" primary class="m-4"/>
+    <UiButton label="Test" primary class="m-4"/>
 
     <cc-button
         label="VIN VIN"
