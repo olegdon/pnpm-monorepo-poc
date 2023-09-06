@@ -1,22 +1,20 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  css: ["~/assets/main.css"],
+  // css: ['~/assets/main.css'],
   components: {
     dirs: ["~/components"],
   },
   imports: {
     dirs: ["stores"],
   },
-  devtools: { enabled: true },
   modules: [
-    "cc-ui",
+    "@olegdon/pnpm-monorepo-poc-ui",
     [
       "@pinia/nuxt",
       {
         autoImports: ["defineStore", "acceptHMRUpdate"],
       },
     ],
-    "@nuxt/devtools",
     "@nuxtjs/tailwindcss",
     "@vueuse/nuxt",
     "@vue-macros/nuxt"
@@ -32,7 +30,7 @@ export default defineNuxtConfig({
   tailwindcss: {
     config: {
       content: [
-        "./node_modules/@lautr/initium-nuxt-design/**/*.vue",
+        './node_modules/@olegdon/pnpm-monorepo-poc-ui/**/*.vue',
         "./components/**/*.{js,vue,ts}",
         "./layouts/**/*.vue",
         "./pages/**/*.vue",

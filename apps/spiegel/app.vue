@@ -4,10 +4,22 @@
       Hello SPIEGEL!
     </h1>
 
-    <UiButton label="Spiegel" background-color="red" size="small" text-color="white"/>
+    <UiButton
+        v-for="color in ['dark', 'light', 'system']"
+        :key="color"
+    >
+      {{ color }}
+    </UiButton>
+
+    <cc-button
+        v-for="color in ['dark', 'light', 'system']"
+        :key="color"
+    >
+      {{ color }}
+    </cc-button>
   </div>
 </template>
 
 <script setup>
-import UiButton from 'cc-ui/components/Button'
+import UiButton from '@olegdon/pnpm-monorepo-poc-ui/components/ui/Button'
 </script>
