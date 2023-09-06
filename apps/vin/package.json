@@ -2,18 +2,27 @@
   "name": "vin",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev --port=3010",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "build": "NITRO_PRESET=vercel-edge nuxt build",
+    "dev": "nuxi dev --port=3010",
+    "start": "nuxi start",
+    "coverage": "vitest run --coverage",
+    "postinstall": "nuxi prepare",
+    "test": "vitest run"
   },
   "devDependencies": {
-    "@nuxt/devtools": "latest",
-    "@types/node": "^18.17.3"
+    "@nuxt/devtools": "0.8.2",
+    "@nuxt/test-utils-edge": "3.3.3-28007403.1fd491f1",
+    "@nuxtjs/color-mode": "3.3.0",
+    "@pinia/nuxt": "0.4.11",
+    "@vue-macros/nuxt": "1.7.12",
+    "@vueuse/nuxt": "10.4.1",
+    "autoprefixer": "10.4.15",
+    "nuxt": "3.7.1",
+    "pinia": "2.1.6",
+    "vitest": "0.34.3"
   },
   "dependencies": {
-    "nuxt": "^3.6.5",
+    "@nuxtjs/tailwindcss": "6.8.0",
     "cc-ui": "workspace:0.0.1"
   }
 }

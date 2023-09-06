@@ -10,8 +10,35 @@
   "keywords": [],
   "license": "ISC",
   "dependencies": {
-    "@nuxt/kit": "^3.7.0",
-    "@nuxtjs/tailwindcss": "^6.8.0",
-    "sass": "^1.66.1"
+    "vue": "3.3.4"
+  },
+  "devDependencies": {
+    "@nuxt/kit": "3.7.1",
+    "@nuxt/schema": "3.7.1",
+    "@storybook/addon-essentials": "7.4.0",
+    "@storybook/addon-interactions": "7.4.0",
+    "@storybook/addon-links": "7.4.0",
+    "@storybook/blocks": "7.4.0",
+    "@storybook/jest": "0.2.2",
+    "@storybook/test-runner": "0.13.0",
+    "@storybook/testing-library": "0.2.0",
+    "@storybook/vue3": "7.4.0",
+    "@storybook/vue3-vite": "7.4.0",
+    "@types/node": "18.17.14",
+    "@vitejs/plugin-vue": "4.3.4",
+    "@vue/tsconfig": "0.4.0",
+    "autoprefixer": "10.4.15",
+    "postcss": "8.4.29",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "1.66.1",
+    "storybook": "7.4.0",
+    "storybook-dark-mode": "3.0.1",
+    "tailwindcss": "3.3.3",
+    "unplugin-auto-import": "0.16.6",
+    "unplugin-vue-components": "0.25.2",
+    "unplugin-vue-macros": "2.4.14",
+    "vite": "4.4.9",
+    "vue-tsc": "1.8.8"
   }
 }

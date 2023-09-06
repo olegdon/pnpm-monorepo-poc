@@ -11,7 +11,7 @@
         class="md:mr-8 header__menu-logo"
       >
         <img
-            src="../public/logos/gutscheine_de.png"
+            src="/logos/gutscheine_de.png"
             width="116"
             height="56"
             alt="gutscheine_de logo"
