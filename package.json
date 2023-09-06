@@ -1,6 +1,7 @@
 {
-  "name": "mono-web-app-poc",
+  "name": "@olegdon/pnpm-monorepo-poc",
   "version": "1.0.0",
+  "packageManager": "pnpm@8.7.1",
   "description": "Scalable Nuxt 3 Mono repos with PNPM Workspaces for Voucher Channelizers",
   "author": "Oleg Don",
   "main": "index.js",
@@ -14,29 +15,8 @@
   "keywords": [],
   "license": "ISC",
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.3.2",
-    "@storybook/addon-interactions": "^7.3.2",
-    "@storybook/addon-links": "^7.3.2",
-    "@storybook/blocks": "^7.3.2",
-    "@storybook/cli": "^7.3.2",
-    "@storybook/testing-library": "^0.2.0",
-    "@storybook/vue3": "^7.3.2",
-    "@storybook/vue3-vite": "^7.3.2",
-    "@typescript-eslint/eslint-plugin": "^5.53.0",
-    "@typescript-eslint/parser": "^5.53.0",
-    "eslint": "^8.43.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-storybook": "^0.6.13",
-    "eslint-plugin-vitest": "^0.2.6",
-    "eslint-plugin-vue": "^9.9.0",
-    "prettier": "3.0.2",
-    "prettier-plugin-tailwindcss": "^0.2.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "storybook": "^7.3.2",
-    "typescript": "^4.9.5"
+    "@antfu/eslint-config": "0.41.0",
+    "eslint": "8.48.0",
+    "typescript": "5.2.2"
   }
 }
