@@ -7,19 +7,9 @@
     <UiButton
         v-for="color in ['dark', 'light', 'system']"
         :key="color"
+        class="mx-2"
     >
       {{ color }}
     </UiButton>
-
-    <cc-button
-        v-for="color in ['dark', 'light', 'system']"
-        :key="color"
-    >
-      {{ color }}
-    </cc-button>
   </div>
 </template>
-
-<script setup>
-import UiButton from "cc-ui/components/ui/Button.vue"
-</script>

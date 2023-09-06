@@ -14,6 +14,6 @@
     "nuxt": "^3.6.5"
   },
   "dependencies": {
-    "cc-ui": "workspace:0.0.1"
+    "@olegdon/pnpm-monorepo-poc-ui": "workspace:*"
   }
 }

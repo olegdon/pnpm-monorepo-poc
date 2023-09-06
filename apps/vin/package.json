@@ -9,8 +9,11 @@
     "postinstall": "nuxi prepare",
     "test": "vitest run"
   },
+  "dependencies": {
+    "@nuxtjs/tailwindcss": "6.8.0",
+    "@olegdon/pnpm-monorepo-poc-ui": "workspace:*"
+  },
   "devDependencies": {
-    "@nuxt/devtools": "0.8.2",
     "@nuxt/test-utils-edge": "3.3.3-28007403.1fd491f1",
     "@nuxtjs/color-mode": "3.3.0",
     "@pinia/nuxt": "0.4.11",
@@ -20,9 +23,5 @@
     "nuxt": "3.7.1",
     "pinia": "2.1.6",
     "vitest": "0.34.3"
-  },
-  "dependencies": {
-    "@nuxtjs/tailwindcss": "6.8.0",
-    "cc-ui": "workspace:0.0.1"
   }
 }

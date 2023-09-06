@@ -5,6 +5,8 @@
 </pre>
 <hr />
 
+> big thanks to [lautr/initium-nuxt](https://github.com/lautr/initium-nuxt)
+
 ## Features
 - [Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
 - [Vite](https://vitejs.dev/) - Instant HMR

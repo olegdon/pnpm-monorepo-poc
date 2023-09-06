@@ -6,8 +6,8 @@ export default defineNuxtModule({
     setup(_, nuxt) {
         nuxt.hook('components:dirs', dirs => {
             dirs.push({
-                path: join(__dirname, 'components'),
-                prefix: 'cc',
+                path: join(__dirname, 'components')
+                // prefix: 'cc',
             })
         })
     }
